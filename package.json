@@ -1,0 +1,12 @@
+{
+  "name": "brand-site",
+  "version": "1.0.0",
+  "description": "品牌展示官方网站",
+  "scripts": {
+    "build": "node src/build.js",
+    "start": "npx serve dist"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

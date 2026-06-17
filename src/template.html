@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>飞旗寨 · 大别山云端度假酒店</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ====== 导航栏 ====== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">⛰️ 飞旗寨</a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#services">酒店服务</a></li>
+          <li><a href="#redculture">红色文化</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== 首页英雄区 ====== -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <h1>{{HERO_TITLE}}</h1>
+      <p class="hero-sub">{{HERO_SUB}}</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-primary">了解飞旗寨</a>
+        <a href="#contact" class="btn btn-outline">预订咨询</a>
+      </div>
+    </div>
+    <div class="hero-bg-shape"></div>
+  </section>
+
+  <!-- ====== 关于飞旗寨 ====== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>关于飞旗寨</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          {{ABOUT_CONTENT}}
+          <div class="stats">
+            <div class="stat-item">
+              <span class="stat-num" data-count="1064">0</span><span class="stat-unit">m</span>
+              <span class="stat-label">主峰海拔</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-count="380">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">年历史</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-count="5000">0</span><span class="stat-unit">亩</span>
+              <span class="stat-label">规划面积</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="img-placeholder">
+            <span>🏔️ 飞旗寨风光</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 酒店服务 ====== -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>酒店 &amp; 服务</h2>
+        <div class="divider"></div>
+        <p class="section-desc">融合自然生态与人文底蕴，为您打造难忘的大别山居体验</p>
+      </div>
+      <div class="services-grid">
+        {{SERVICES_HTML}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 红色文化 ====== -->
+  <section class="section section-red" id="redculture">
+    <div class="container">
+      <div class="section-header">
+        <h2>岳西 · 红色文化</h2>
+        <div class="divider"></div>
+        <p class="section-desc">「建县不到百年，半部都是红色史诗」—— 走进大别山革命老区</p>
+      </div>
+      <div class="red-intro">
+        <p>岳西县地处大别山腹地，是著名的 <strong>革命老区</strong>，属于 <strong>鄂豫皖革命根据地</strong> 和 <strong>大别山革命根据地</strong> 的核心区域。全县共有革命遗址 <strong>336处</strong>，占安徽省总数的十分之一，现有红色教育基地 <strong>16个</strong>。</p>
+      </div>
+      <div class="red-grid">
+        <div class="red-card">
+          <div class="red-card-icon">🏛️</div>
+          <h3>红二十八军军政旧址纪念馆</h3>
+          <p>位于鹞落坪国家级自然保护区内，1935-1937年红二十八军坚持鄂豫皖三年游击战争的大本营，见证了艰苦卓绝的革命岁月。</p>
+        </div>
+        <div class="red-card">
+          <div class="red-card-icon">🪦</div>
+          <h3>大别山烈士陵园</h3>
+          <p>位于岳西县城南虎形山，1959年兴建，安徽省爱国主义教育基地，国家红色旅游精品线路重要景点，安葬着数千名为革命献身的先烈。</p>
+        </div>
+        <div class="red-card">
+          <div class="red-card-icon">📖</div>
+          <h3>王步文故居</h3>
+          <p>中共安徽省委首任书记王步文的出生地，是安徽省重要的红色教育基地，承载着早期共产党人的初心与使命。</p>
+        </div>
+        <div class="red-card">
+          <div class="red-card-icon">🌿</div>
+          <h3>鹞落坪 · 红色基因赋能绿色发展</h3>
+          <p>国家级自然保护区，央视《重走抗战路》栏目组曾赴此探访，是"红色+生态"融合发展的典范，绿水青山间铭刻着红色记忆。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 联系我们 ====== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>联系我们</h2>
+        <div class="divider"></div>
+        <p class="section-desc">欢迎咨询预订，期待您在飞旗寨度过美好时光</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          {{CONTACT_INFO}}
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="您的姓名" required>
+          <input type="email" placeholder="您的邮箱" required>
+          <input type="text" placeholder="入住日期 / 咨询主题">
+          <textarea rows="5" placeholder="留言内容（例如：我想预订一间山景房，预计7月15日入住）" required></textarea>
+          <button type="submit" class="btn btn-primary">发送咨询</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 页脚 ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>⛰️ 飞旗寨度假酒店</h3>
+          <p>云端之上 · 心归自然。大别山腹地的诗意栖居。</p>
+        </div>
+        <div class="footer-links">
+          <h4>快速链接</h4>
+          <ul>
+            <li><a href="#hero">首页</a></li>
+            <li><a href="#about">关于飞旗寨</a></li>
+            <li><a href="#services">酒店服务</a></li>
+            <li><a href="#redculture">红色文化</a></li>
+            <li><a href="#contact">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>联系我们</h4>
+          <p>📍 安徽省安庆市岳西县莲云乡</p>
+          <p>✉️ welcome@feiqizhai.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 飞旗寨度假酒店 · All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

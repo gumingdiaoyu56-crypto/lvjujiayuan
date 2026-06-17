@@ -1,0 +1,61 @@
+# Decap CMS 配置
+# 编辑你的网站内容，更改会自动提交到 GitHub，Netlify 自动部署
+
+backend:
+  name: git-gateway
+  branch: main
+
+# 不显示预览
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "hero"
+    label: "首页英雄区"
+    label_singular: "英雄区"
+    folder: "content"
+    create: false
+    slug: "hero"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - { label: "大标题", name: "body", widget: "markdown", hint: "使用 \\n 换行" }
+
+  - name: "about"
+    label: "关于我们"
+    folder: "content"
+    create: false
+    slug: "about"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - { label: "内容", name: "body", widget: "markdown" }
+
+  - name: "services"
+    label: "服务项目"
+    folder: "content"
+    create: false
+    slug: "services"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - { label: "服务列表（每项一行）", name: "body", widget: "markdown" }
+
+  - name: "contact"
+    label: "联系方式"
+    folder: "content"
+    create: false
+    slug: "contact"
+    extension: md
+    format: frontmatter
+    editor:
+      preview: false
+    fields:
+      - { label: "联系信息", name: "body", widget: "markdown" }
