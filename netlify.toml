@@ -1,9 +1,8 @@
 # Netlify 部署配置
 [build]
-  command = "npm run build"
-  publish = "dist"
+  publish = "."
 
-# 所有请求指向 index.html（单页应用）
+# 所有请求指向 index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
