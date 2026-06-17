@@ -1,11 +1,10 @@
-# Decap CMS 配置
-# 编辑你的网站内容，更改会自动提交到 GitHub，Netlify 自动部署
-
 backend:
   name: git-gateway
   branch: main
 
-# 不显示预览
+site_url: https://lvjujiayuan.netlify.app
+logo_url: https://lvjujiayuan.netlify.app/admin/logo.png
+
 publish_mode: editorial_workflow
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
