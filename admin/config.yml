@@ -2,17 +2,12 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://lvjujiayuan.netlify.app
-logo_url: https://lvjujiayuan.netlify.app/admin/logo.png
-
-publish_mode: editorial_workflow
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
   - name: "hero"
     label: "首页英雄区"
-    label_singular: "英雄区"
     folder: "content"
     create: false
     slug: "hero"
@@ -21,7 +16,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "大标题", name: "body", widget: "markdown", hint: "使用 \\n 换行" }
+      - { label: "大标题", name: "body", widget: "markdown" }
 
   - name: "about"
     label: "关于我们"
@@ -45,7 +40,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "服务列表（每项一行）", name: "body", widget: "markdown" }
+      - { label: "服务列表", name: "body", widget: "markdown" }
 
   - name: "contact"
     label: "联系方式"
